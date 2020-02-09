@@ -31,9 +31,9 @@ ostream& operator<<(ostream& os, const vector<int> &input)
 int main()
 {
     Solution S;
-    vector<int> input = {2, 7, 1, 15};
+    vector<int> input = {2, 3, 5, 7};
     vector<int> result;
-    result = S.twoSum(input, 16);
+    result = S.twoSum(input, 10);
     cout<<"The answer is: "<< result << endl;
     return 0;
 }
