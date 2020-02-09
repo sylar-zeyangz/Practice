@@ -12,10 +12,11 @@ public:
             auto it = imap.find(target - nums[i]);
 
             if (it != imap.end()) 
-                return vector<int> {i, it->second};
+                return {i, it->second};
 
             imap[nums[i]] = i;
         }
+        return {};
     }
 };
 
