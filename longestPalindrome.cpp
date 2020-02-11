@@ -26,8 +26,8 @@ public:
                 max_len = new_len;
             }
         }
-    return s.substr(min_start, max_len);
-}
+        return s.substr(min_start, max_len);
+    }
 };
 
 int main()
