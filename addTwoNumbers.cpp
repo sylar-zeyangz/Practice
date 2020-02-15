@@ -45,7 +45,7 @@ public:
 int main()
 {
     Solution S;
-    ListNode* n1 = new ListNode(5);
+    ListNode* n1 = new ListNode(3);
     ListNode* n2 = n1;
     ListNode* result = S.addTwoNumbers(n1, n2);
     cout << "The answer is: " << result->val << endl;
