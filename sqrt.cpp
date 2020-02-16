@@ -14,10 +14,19 @@ public:
         }
         return r;
     }
+    
+    int newtonSqrt(int x) {
+        double a = x;
+        const double delta = 0.2;
+        while ( (a * a - x) > 0.2 ) {
+            a = (a + x / a) / 2.0;
+        }
+        return a;
+    }
 };
 
 int main() {
     Solution S;
-    cout << S.mySqrt(8) << endl;
+    cout << S.newtonSqrt(5) << endl;
     return 0;
 }
