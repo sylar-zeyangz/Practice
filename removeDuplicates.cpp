@@ -20,7 +20,7 @@ public:
 int main()
 {
     Solution S;
-    vector<int> a{0,1,1,2,2,2,3,4,4,5,6,7};
+    vector<int> a{0,1,1,2};
     cout << "The answer is: " << S.removeDuplicates(a) << endl;
     cout << "--------\n";
     for (int i = 0; i < a.size(); i++) 
