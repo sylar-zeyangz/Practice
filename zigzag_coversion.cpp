@@ -1,12 +1,14 @@
 #include<vector>
 #include<iostream>
+#include<typeinfo>
 using namespace std;
 
 class Solution {
 public:
     string convert(string s, int numRows) {
         if (numRows == 1) return s;
-        vector<string> rows( min( int(s.size()), numRows) );
+        // s.size() -> unsigned numRows -> int
+        vector<string> rows( min( (int)s.size(), numRows) );
         int curRow = 0;
         bool down = false;
         for (char c : s) {
