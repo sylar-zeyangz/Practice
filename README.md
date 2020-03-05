@@ -1,2 +1,2 @@
-# Algorithms
+# Pratice
 C++ practice
