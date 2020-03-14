@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<unordered_map>
+
 using namespace std;
 
 class Solution {
@@ -44,6 +45,9 @@ int main()
     vector<int> a = {5, 3, 2, 0, 1};
     cout<<"The answer is: "<< S.missingNumber(a) << endl;
     cout<<"The answer is: "<< S.missingNumber_bitOp(a) << endl;
+    
+    int x = 2^2;
+    cout << x;
     return 0;
 }
 
