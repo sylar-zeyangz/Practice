@@ -20,7 +20,7 @@ public:
 int main()
 {
     Solution S;
-    vector<string> s;
+    vector<string> s{"asdarwq", "asDSDSADs", "asd1832h"};
     cout<<"The answer is: "<< S.longestCommonPrefix(s) << endl;
     return 0;
 }
