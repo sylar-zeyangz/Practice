@@ -12,9 +12,9 @@ public:
         vector<int> res = vector<int>(rowIndex + 1, 1);
         
         // 0-indexed rows
-        for (int row = 1; row <= rowIndex; ++ row)
+        for (int row = 1; row <= rowIndex; ++row)
             // Reverse the order so no extra space needed
-            for (int i = row - 1; i > 0; -- i)
+            for (int i = row - 1; i > 0; --i)
                 res[i] += res[i - 1];
         
         return res;
