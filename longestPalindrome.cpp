@@ -33,7 +33,7 @@ public:
 int main()
 {
     Solution S;
-    string s = "asdsdSwiwoe";
+    string s = "asdsdswiwoe";
     cout<<"The answer is: "<< S.longestPalindrome(s) << endl;
     return 0;
 }
