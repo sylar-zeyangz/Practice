@@ -18,7 +18,7 @@ int main()
 {
     // INT_MAX = 2,147,483,648;
     // INT_MIN = -2,147,483,648;
-    int x = 23412;
+    int x = 2147447412;
     Solution S;
     cout<<"The answer is: "<< S.isPalindrome(x) << endl;
     return 0;

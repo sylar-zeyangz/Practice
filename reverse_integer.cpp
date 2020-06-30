@@ -9,6 +9,8 @@ public:
         while (x != 0) {
             int pop = x % 10;
             x /= 10;
+            // These two are only possible when integer x is either 
+            // 8463847412 (first digit greater than 7) or -9463847412 (first digit less than -8)
             if ( ret < INT_MIN/10 || ret > INT_MAX/10 || 
                  (ret == INT_MAX/10 && pop > 7) || 
                  (ret == INT_MIN/10 && pop < -8 )) return 0;

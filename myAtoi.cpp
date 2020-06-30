@@ -28,7 +28,7 @@ int main()
 {
     // INT_MAX = 2147483648;
     // INT_MIN = -2147483648;
-    string s = "    -32 wew";
+    string s = "    wew";
     Solution S;
     cout<<"The answer is: "<< S.myAtoi(s) << endl;
     return 0;
