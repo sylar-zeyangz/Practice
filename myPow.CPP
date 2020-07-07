@@ -40,6 +40,7 @@ private:
 int main()
 {
     Solution S;
+    cout<<"The answer is: "<<  S.myPow(2, 3) << endl;
     cout<<"The answer is: "<<  S.myPow(1000, INT_MAX) << endl;
     return 0;
 }

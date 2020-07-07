@@ -27,7 +27,7 @@ public:
 int main()
 {
     Solution S;
-    vector<int> a{1,3,2};
+    vector<int> a{2,3,1};
     S.nextPermutation(a);
     for (int i = 0; i < a.size(); i++)
         cout << a[i] << " ";

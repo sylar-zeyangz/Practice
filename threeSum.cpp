@@ -45,7 +45,7 @@ ostream& operator<<(ostream& os, const vector<vector<int>> &input)
 int main()
 {
     Solution S;
-    vector<int> a = {-1, 0, 1, 2, -1, -4};
+    vector<int> a = {-2,0,0,2,2};
     cout<<"The answer is: "<< S.threeSum(a) << endl;
     return 0;
 }

@@ -14,7 +14,7 @@ public:
         sort(nums.begin(),nums.end());
         int sum = 0;
         int max_distance = INT_MAX;
-        for(int i = 0;i+2<nums.size();i++) {
+        for(int i = 0;i + 2<nums.size();i++) {
             int spos = i+1;
             int epos = nums.size() - 1;
             while(spos<epos) {
@@ -39,7 +39,7 @@ public:
 int main()
 {
     Solution S;
-    vector<int> a = {-1,2,1,-4};
-    cout<<"The answer is: "<< S.threeSumClosest(a, 1) << endl;
+    vector<int> a = {1,2,4,8,16,32,64,128};
+    cout<<"The answer is: "<< S.threeSumClosest(a, 82) << endl;
     return 0;
 }
