@@ -12,7 +12,7 @@ public:
             auto it = imap.find(target - nums[i]);
 
             if (it != imap.end()) 
-                return {i, it->second};
+                return {it->second, i};
 
             imap[nums[i]] = i;
         }
