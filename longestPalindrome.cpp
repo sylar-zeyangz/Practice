@@ -5,7 +5,8 @@ using namespace std;
 
 class Solution {
 public:    
-    string longestPalindrome(string s) {
+    // Better interpretation
+    string longestPalindrome(string s) { 
         const int n = s.length();
         auto getLen = [&](int l, int r)
         {
