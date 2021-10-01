@@ -4,8 +4,32 @@
 using namespace std;
 
 class Solution {
-public:
+public:    
     string longestPalindrome(string s) {
+        const int n = s.length();
+        auto getLen = [&](int l, int r)
+        {
+            while (l >= 0 && r < n && s[l] == s[r]) 
+            {
+                --l;
+                ++r;
+            }
+            return r - l - 1;
+        };
+        int max_len = 0, start = 0;
+        for (int i = 0; i < n; ++i) 
+        {
+            int cur_len = max(getLen(i, i), getLen(i, i + 1));
+            if (cur_len > max_len)
+            {
+                max_len = cur_len;
+                start = i - (cur_len - 1) / 2;
+            }
+        }
+        return s.substr(start, max_len);
+    }
+    
+    string longestPalindrome_archive(string s) {
         if (s.size() <= 1) 
             return s;
         int min_start = 0, max_len = 1;
